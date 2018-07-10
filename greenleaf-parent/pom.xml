@@ -13,4 +13,7 @@
 		<version>2.0.3.RELEASE</version>
 	</parent>
 
+	<scm>
+		<url>https://github.com/emaedl/greenleaf.git</url>
+	</scm>
 </project>
