@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: frommelt
+Build-Jdk: 10.0.1
+Implementation-Title: greenleaf-microservice-testsuites
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: greenleaf
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/greenleaf-parent/greenleaf-microservice-testsuites
+Created-By: Maven Integration for Eclipse
+

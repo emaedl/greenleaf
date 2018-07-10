@@ -4,4 +4,9 @@
   <artifactId>greenleaf-base</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
+  <modules>
+  	<module>
+  		../../../../eclipse/photon/greenleaf-microservice-testsuites
+  	</module>
+  </modules>
 </project>
