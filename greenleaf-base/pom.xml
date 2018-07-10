@@ -6,5 +6,6 @@
   <packaging>pom</packaging>
   <modules>
   	<module>../greenleaf-microservice-testsuites</module>
+  	<module>../greenleaf-gateway</module>
   </modules>
 </project>
