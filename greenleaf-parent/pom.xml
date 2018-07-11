@@ -16,4 +16,7 @@
 	<scm>
 		<url>https://github.com/emaedl/greenleaf.git</url>
 	</scm>
+	<properties>
+		<liquibase.ext.version>3.6</liquibase.ext.version>
+	</properties>
 </project>

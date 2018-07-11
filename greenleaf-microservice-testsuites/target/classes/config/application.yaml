@@ -1,0 +1,21 @@
+spring :
+  jpa :
+    hibernate :
+      ddl-auto : update 
+    properties :
+      hibernate :
+        dialect : org.hibernate.dialect.MySQL5InnoDBDialect
+        generate_statistics : true
+        format_sql: true
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+
+logging :
+  level:
+    org:
+      hibernate:
+        stat: debug
+        type: trace
+
