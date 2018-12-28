@@ -23,4 +23,13 @@
 hs_err_pid*
 
 # maven
-*/target/*
+target/
+log/
+
+#Eclipse
+.classpath
+.project
+.settings/
+
+
+
