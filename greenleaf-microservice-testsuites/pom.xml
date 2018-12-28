@@ -9,10 +9,14 @@
 		<relativePath>../greenleaf-parent/pom.xml</relativePath>
 	</parent>
 	<artifactId>greenleaf-microservice-testsuites</artifactId>
-
+	<packaging>jar</packaging>
 	<name>greenleaf-microservice-testsuites</name>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -40,28 +44,67 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
-				<groupId>org.liquibase</groupId>
-				<artifactId>liquibase-maven-plugin</artifactId>
-				<version>${liquibase.version}</version>
-				<configuration>
-					<propertyFile>src/main/resources/liquibase.properties</propertyFile>
-				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>org.liquibase.ext</groupId>
-						<artifactId>liquibase-hibernate5</artifactId>
-						<version>${liquibase.ext.version}</version>
-					</dependency>
-					<!-- <dependency>
-						<groupId>org.springframework</groupId>
-						<artifactId>spring-beans</artifactId>
-					</dependency>
-					<dependency>
-						<groupId>org.springframework.data</groupId>
-						<artifactId>spring-data-jpa</artifactId>
-					</dependency> -->
-				</dependencies>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
 			</plugin>
+			<!-- <plugin> -->
+			<!-- <groupId>org.liquibase</groupId> -->
+			<!-- <artifactId>liquibase-maven-plugin</artifactId> -->
+			<!-- <version>${liquibase.version}</version> -->
+			<!-- <configuration> -->
+			<!-- <propertyFile>src/main/resources/liquibase.properties</propertyFile> -->
+			<!-- </configuration> -->
+			<!-- <dependencies> -->
+			<!-- <dependency> -->
+			<!-- <groupId>org.liquibase.ext</groupId> -->
+			<!-- <artifactId>liquibase-hibernate5</artifactId> -->
+			<!-- <version>${liquibase.ext.version}</version> -->
+			<!-- </dependency> -->
+			<!-- <dependency> <groupId>org.springframework</groupId> <artifactId>spring-beans</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.data</groupId> <artifactId>spring-data-jpa</artifactId> 
+				</dependency> -->
+			<!-- </dependencies> -->
+			<!-- </plugin> -->
 		</plugins>
 	</build>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<!-- <reportSets>
+					<reportSet>
+						<reports>
+							<report>report</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+				 -->
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>com.github.spotbugs</groupId>
+				<artifactId>spotbugs-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>checkstyle</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+		</plugins>
+	</reporting>
 </project>

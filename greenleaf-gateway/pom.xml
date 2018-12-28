@@ -8,6 +8,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>../greenleaf-parent/pom.xml</relativePath>
 	</parent>
+	<packaging>jar</packaging>
 	
 	<artifactId>greenleaf-gateway</artifactId>
 	
