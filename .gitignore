@@ -31,5 +31,6 @@ log/
 .project
 .settings/
 
-
+#spring
+.springbeans
 

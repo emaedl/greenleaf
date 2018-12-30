@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Greenleaf"
+	xmlns="http://maven.apache.org/DECORATION/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+	<bannerLeft>
+		<name>Greenleaf</name>
+		<src>images/greenleaf.jpg</src>
+		<href>http://neptun/</href>
+	</bannerLeft>
+	<bannerRight>
+		<src>images/greenleaf.jpg</src>
+	</bannerRight>
+
+	<body>
+		<links>
+			<item name="Apache" href="http://www.apache.org/" />
+			<item name="Maven 1.0" href="http://maven.apache.org/" />
+			<item name="Maven 2" href="http://maven.apache.org/maven2/" />
+		</links>
+
+		<menu name="Maven 2.0">
+			<item name="APT Format" href="format.html" />
+			<item name="FAQ" href="faq.html" />
+			<item name="Xdoc Example" href="xdoc.html" />
+			<item name="Greenleaf Microservice Testsuites" href="../../greenleaf-gateway/greenleaf-gateway/index.html" />
+			<item name="Greenleaf Gateway" href="../../greenleaf-microservice-testsuites/greenleaf-microservice-testsuites/index.html" />
+		</menu>
+		
+		<menu ref="reports"/>
+		
+	</body>
+</project>

@@ -1,0 +1,16 @@
+ -----
+ Web Site
+ -----
+ Greenleaf Team
+ -----
+
+Maven Site für das greenleaf projekt
+
+ Gratulation! Wenn du diese Seite siehst, dann hast du erfolgreich eine template site angelegt
+ unter Einsatz des site archetypes und du hast folgendes Kommando ausgeführt:
+
++-----+
+
+mvn site
+
++-----+

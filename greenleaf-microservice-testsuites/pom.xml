@@ -73,14 +73,8 @@
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
-				<!-- <reportSets>
-					<reportSet>
-						<reports>
-							<report>report</report>
-						</reports>
-					</reportSet>
-				</reportSets>
-				 -->
+				<!-- <reportSets> <reportSet> <reports> <report>report</report> </reports> 
+					</reportSet> </reportSets> -->
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

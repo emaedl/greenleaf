@@ -1,0 +1,92 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>greenleaf</groupId>
+		<artifactId>greenleaf-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../greenleaf-parent/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>greenleaf-site</artifactId>
+
+	<packaging>pom</packaging>
+
+	<name>greenleaf</name>
+	<url>http://neptun/</url>
+	<inceptionYear>2019</inceptionYear>
+
+<!-- <distributionManagement>
+		<site>
+			<id>website</id>
+			<url>scp://webhost.company.com/www/website</url>
+		</site>
+	</distributionManagement>
+-->	
+ 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-site-plugin</artifactId>
+				<configuration>
+					<locales>en, de</locales>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+	<reporting>
+		<plugins>
+			<!-- <plugin> -->
+			<!-- <groupId>org.apache.maven.plugins</groupId> -->
+			<!-- <artifactId>maven-jxr-plugin</artifactId> -->
+			<!-- <reportSets> -->
+			<!-- <reportSet> -->
+			<!-- <id>aggregate</id> -->
+			<!-- <inherited>false</inherited> -->
+			<!-- <reports> -->
+			<!-- <report>aggregate</report> -->
+			<!-- </reports> -->
+			<!-- </reportSet> -->
+			<!-- </reportSets> -->
+			<!-- </plugin> -->
+			<!-- <plugin> -->
+			<!-- <groupId>org.apache.maven.plugins</groupId> -->
+			<!-- <artifactId>maven-checkstyle-plugin</artifactId> -->
+			<!-- <reportSets> -->
+			<!-- <reportSet> -->
+			<!-- <id>aggregate</id> -->
+			<!-- <inherited>false</inherited> -->
+			<!-- <reports> -->
+			<!-- <report>aggregate</report> -->
+			<!-- </reports> -->
+			<!-- </reportSet> -->
+			<!-- </reportSets> -->
+			<!-- </plugin> -->
+			<!-- <plugin> -->
+			<!-- <groupId>org.apache.maven.plugins</groupId> -->
+			<!-- <artifactId>maven-javadoc-plugin</artifactId> -->
+			<!-- <reportSets> -->
+			<!-- <reportSet> -->
+			<!-- <id>aggregate</id> -->
+			<!-- <inherited>false</inherited> -->
+			<!-- <reports> -->
+			<!-- <report>aggregate</report> -->
+			<!-- </reports> -->
+			<!-- </reportSet> -->
+			<!-- </reportSets> -->
+			<!-- </plugin> -->
+		</plugins>
+	</reporting>
+
+</project>
